@@ -28,7 +28,7 @@
             <div class="form-group">
 
                 <label for="name"><i class="fa-solid fa-user"></i> Agent Name </label>
-                <input list="nameList" id="name" name="Agent Name"  class="form-control form-control-input name_ag_inp" placeholder="Agent Name" required />
+                <input onclick="openSuggestions()" list="nameList" id="name" name="Agent Name"  class="form-control form-control-input name_ag_inp" placeholder="Agent Name" required />
                 
                 <datalist id="nameList" class="name_Agent1">
          
@@ -43,8 +43,8 @@
 
 
             <div class="form-group">
-                <label><i class="fa-solid fa-money-bill-1-wave"></i> اجمالي مصروفات المحفظة</label>
-                <input type="number" maxlength="6" name="Total expenses"  class="form-control form-control-input"  placeholder="  اجمالي مصروفات المحفظة"/>
+                <label><i class="fa-solid fa-money-bill-1-wave"></i> اجمالي مصروفات المحفظة</label>
+                <input type="number" maxlength="6" name="Total expenses"  class="form-control form-control-input"  placeholder="  اجمالي مصروفات المحفظة"/>
             </div>
 
 
@@ -252,14 +252,14 @@
 
               <div class="show_div">
                 <label>
-                  <input type="checkbox" id="toggleCheckbox2" onclick="toggleInputs('inputContainer2','toggleCheckbox2','Requestedamount','Waleet')"> 
+                  <input type="checkbox" id="toggleCheckbox6" onclick="toggleInputs('inputContainer6','toggleCheckbox6','Requestedamount','Waleet')"> 
                   <i class="fa-solid fa-hand-holding-dollar"></i>
                   طلب اموال
                 </label>
               </div>
               
               
-              <div id="inputContainer2" class="hidden inputContainer">
+              <div id="inputContainer6" class="hidden inputContainer">
                 
 
 
@@ -306,6 +306,17 @@
 
 
     <script>
+
+function openSuggestions() {
+  var input = document.getElementById('name');
+  // وضع التركيز على العنصر لفتح القائمة تلقائيًا
+  input.focus();
+
+}
+
+
+
+
 function toggleInputs( id_Dev , id_checkbox , clas_inp1 , clas_inp2 ) {
   var inputContainer = document.getElementById(`${id_Dev}`);
 
