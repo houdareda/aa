@@ -6,18 +6,18 @@ fetch('data.json')
     .then(data => {
 
         
-        let list_Name_Agent = document.querySelector(".name_Agent1")
+        let list_Name_Agent = document.querySelectorAll(".name_Agent1")
 
    
+        list_Name_Agent.forEach(slct =>{
+            data.forEach(agent => {
+                slct.innerHTML += `
+                <option value="${agent.name}">${agent.name}</option>
+                `
+            });
+        })
 
-        data.forEach(agent => {
-            list_Name_Agent.innerHTML += `
 
-            <option value="${agent.name}">
-
-            `
-            
-        });
 
 
         // add phones to input by name 
