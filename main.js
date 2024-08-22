@@ -99,7 +99,19 @@ fetch('data.json')
                
                 if (password_agent && password_agent == password_input.value) {
                
-
+                    btn_subm.classList.add("disable")
+                    btn_subm.innerHTML = `
+                    <div class="dot-spinner">
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+</div>
+                    `
                     
 
 fetch(scriptURL, {
