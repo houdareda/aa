@@ -69,7 +69,6 @@ body{
 }
 .form-control-input::-webkit-input-placeholder {
     color: #747474;
-    font-size: 14px;
 }
 .form-control-input:focus{
     border-color: #A376B9;
@@ -163,3 +162,7 @@ input {
     }
   }
   
+  input[type="date"] {
+    width: 100% !important;
+    font-size: 16px !important; /* تأكد أن حجم الخط لا يقل عن 16px لتجنب مشكلة التكبير */
+  }
