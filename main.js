@@ -7,7 +7,7 @@ fetch('data.json')
 
         
         let list_Name_Agent = document.querySelector(".name_Agent1")
-        let list_Name_Agent2 = document.querySelector(".name_Agent2")
+
    
 
         data.forEach(agent => {
@@ -16,13 +16,7 @@ fetch('data.json')
             <option value="${agent.name}">
 
             `
-
-
-            list_Name_Agent2.innerHTML += `
-
-            <option value="${agent.name}">
-
-            `
+            
         });
 
 

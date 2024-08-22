@@ -98,17 +98,18 @@ body{
   }
   
   .inputContainer.show {
-    max-height: 200px; /* الارتفاع الكافي لاحتواء المدخلات */
+    max-height: 300px; /* الارتفاع الكافي لاحتواء المدخلات */
     opacity: 1;
   }
   .show_div{
     padding: 00px 0 20px;
     text-align: right;
+    margin-top: 30px;
 
 }
 
   .show_div label{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     border: 1px solid #A376B9;
     padding: 2px 20px;
@@ -153,12 +154,14 @@ body{
 
 
 input {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   
 @media screen and (max-width: 768px) {
     input {
-      font-size: 16px !important;
+      font-size: 18px !important;
+      padding: 10px 10px !important;
+
     }
   }
   
