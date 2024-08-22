@@ -49,19 +49,21 @@ fetch('data.json')
                 console.log(password_agent);
                 
                 
-                const phone1 = agent.phone1 ? ` <option value="${agent.phone1}"> ` : "";
+                const phone1 = agent.phone1 ? `<option value="${agent.phone1}">${agent.phone1}</option> ` : "";
 
-                const phone2 = agent.phone2 ? ` <option value="${agent.phone2}"> ` : "";
+                const phone2 = agent.phone2 ? `<option value="${agent.phone2}">${agent.phone2}</option> ` : "";
 
-                const phone3 = agent.phone3 ? ` <option value="${agent.phone3}"> ` : "";
+                const phone3 = agent.phone3 ? `<option value="${agent.phone3}">${agent.phone3}</option> ` : "";
 
-                const phone4 = agent.phone4 ? ` <option value="${agent.phone4}"> ` : "";
+                const phone4 = agent.phone4 ? `<option value="${agent.phone4}">${agent.phone4}</option> ` : "";
 
-                const phone5 = agent.phone5 ? ` <option value="${agent.phone5}"> ` : "";
+                const phone5 = agent.phone5 ? `<option value="${agent.phone5}">${agent.phone5}</option> ` : "";
 
 
 
                 list_Phones.innerHTML = `
+
+                                <option value="" disabled selected>  Number Wallet  </option>
                     ${phone1}
                     ${phone2}
                     ${phone3}
